@@ -1,5 +1,13 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main() {
-  std::cout << "Hello World!\n";
+int main () 
+{
+  string input;
+
+  getline(cin, input);
+
+  //total character,total lowercase,total upper, total digits
+  return 0;
 }
