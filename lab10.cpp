@@ -5,7 +5,7 @@ using namespace std;
 int main () 
 {
   string input;
-  int lowercaseTotal,uppercaseTotal, stringLength, totalDigits;
+  int lowercaseTotal,uppercaseTotal, stringLength, totalDigits, totalSpace;
   char currentCharacter;
 
   getline(cin, input);
@@ -17,6 +17,8 @@ int main ()
 
     switch (currentCharacter) {     
       //total uppercase
+      case 32: totalSpace += 1;
+      break;
       case 65 ... 90: uppercaseTotal += 1;
       break;
       //total upper
